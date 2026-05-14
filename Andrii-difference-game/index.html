@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spot The Difference</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background-glow"></div>
+
+<section class="menu" id="menu">
+
+    <h1>SPOT THE DIFFERENCE</h1>
+
+    <p>
+        Find all hidden differences before time runs out.
+    </p>
+
+    <button id="startBtn">
+        START GAME
+    </button>
+
+</section>
+
+<section class="game hidden" id="game">
+
+    <div class="top-bar">
+
+        <button id="backBtn">
+            ← Späť na portál
+        </button>
+
+        <div>
+            Level:
+            <span id="levelText">1</span>/3
+        </div>
+
+        <div>
+            Found:
+            <span id="foundText">0</span>/<span id="totalText">5</span>
+        </div>
+
+        <div>
+            Time:
+            <span id="timeText">60</span>s
+        </div>
+
+    </div>
+
+    <div class="images-wrapper">
+
+        <div class="image-box">
+            <img
+                id="leftImage"
+                src="images/level1-left.png"
+                alt="left image"
+            >
+        </div>
+
+        <div class="image-box clickable">
+
+            <img
+                id="rightImage"
+                src="images/level1-right.png"
+                alt="right image"
+            >
+
+            <div id="marksLayer"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="level-complete hidden" id="levelComplete">
+
+    <div class="complete-box">
+
+        <h2>LEVEL COMPLETE</h2>
+
+        <p>
+            Great job! Ready for next level?
+        </p>
+
+        <button id="nextLevelBtn">
+            NEXT LEVEL
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
